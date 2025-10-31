@@ -1,0 +1,19 @@
+# smart deploy 
+version: 1
+name: brave-onchain-builder
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: brave
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Deploy to Brave Onchain
+        uses: brave/actions-onchain-deploy@v1
+        with:
+          network: mainnet
+          token: ${{ secrets.BRAVE_TOKEN }}
+

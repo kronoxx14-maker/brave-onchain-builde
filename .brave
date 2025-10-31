@@ -1,0 +1,13 @@
+{
+  "name": "brave-onchain-builder",
+  "description": "A decentralized demo site built for Brave Onchain Hosting",
+  "version": "1.0.0",
+  "build": {
+    "command": "",
+    "outputDir": "."
+  },
+  "hosting": {
+    "type": "onchain",
+    "network": "mainnet"
+  }
+}

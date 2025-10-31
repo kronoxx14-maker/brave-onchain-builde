@@ -1,0 +1,5 @@
+/* Minimal base styles */
+:root{--bg:#0f1724;--muted:#93a3c1;--accent:#7dd3fc}
+body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#071029 0%, #081225 100%);color:#e6eef8}
+a{color:var(--accent)}
+button{cursor:pointer}
